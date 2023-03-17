@@ -11,3 +11,5 @@ C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaV
 C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrnLogin.resources
 C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrmSplash.resources
 C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrmMenuadm.resources
+C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrmCliente.resources
+C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrmFornecedores.resources
