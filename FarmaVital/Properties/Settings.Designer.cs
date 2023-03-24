@@ -33,5 +33,15 @@ namespace FarmaVital.Properties {
                 return ((string)(this["FarmaVitalConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SJC0562941W10-1;Initial Catalog=Farma;User ID=sa;Password=Senac123")]
+        public string FarmaConnectionString {
+            get {
+                return ((string)(this["FarmaConnectionString"]));
+            }
+        }
     }
 }

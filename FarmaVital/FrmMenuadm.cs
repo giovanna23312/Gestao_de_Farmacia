@@ -19,17 +19,20 @@ namespace FarmaVital
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmFornecedores forne = new FrmFornecedores();
-            this.Hide();
-            forne.ShowDialog();
+            
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FrmCliente clie = new FrmCliente();
+           
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmMedicamentos med = new FrmMedicamentos();
             this.Hide();
-            clie.ShowDialog();
+            med.ShowDialog();
         }
     }
 }

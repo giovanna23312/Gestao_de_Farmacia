@@ -46,22 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FarmaVitalDataSet.Designer.cs">
+    <Compile Include="AlterFabricante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterFabricante.Designer.cs">
+      <DependentUpon>AlterFabricante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="FarmaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>FarmaVitalDataSet.xsd</DependentUpon>
+      <DependentUpon>FarmaDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FrmCliente.cs">
+    <Compile Include="FrmFabricante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCliente.Designer.cs">
-      <DependentUpon>FrmCliente.cs</DependentUpon>
+    <Compile Include="FrmFabricante.Designer.cs">
+      <DependentUpon>FrmFabricante.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFornecedores.cs">
+    <Compile Include="FrmFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFornecedores.Designer.cs">
-      <DependentUpon>FrmFornecedores.cs</DependentUpon>
+    <Compile Include="FrmFuncionarios.Designer.cs">
+      <DependentUpon>FrmFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMedicamentos.Designer.cs">
+      <DependentUpon>FrmMedicamentos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSplash.cs">
       <SubType>Form</SubType>
@@ -81,13 +94,25 @@
     <Compile Include="FrnLogin.Designer.cs">
       <DependentUpon>FrnLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="PesquisarFabri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesquisarFabri.Designer.cs">
+      <DependentUpon>PesquisarFabri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmCliente.resx">
-      <DependentUpon>FrmCliente.cs</DependentUpon>
+    <EmbeddedResource Include="AlterFabricante.resx">
+      <DependentUpon>AlterFabricante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmFornecedores.resx">
-      <DependentUpon>FrmFornecedores.cs</DependentUpon>
+    <EmbeddedResource Include="FrmFabricante.resx">
+      <DependentUpon>FrmFabricante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFuncionarios.resx">
+      <DependentUpon>FrmFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMedicamentos.resx">
+      <DependentUpon>FrmMedicamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSplash.resx">
       <DependentUpon>FrmSplash.cs</DependentUpon>
@@ -97,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrnLogin.resx">
       <DependentUpon>FrnLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesquisarFabri.resx">
+      <DependentUpon>PesquisarFabri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -108,16 +136,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="FarmaVitalDataSet.xsc">
-      <DependentUpon>FarmaVitalDataSet.xsd</DependentUpon>
+    <None Include="FarmaDataSet.xsc">
+      <DependentUpon>FarmaDataSet.xsd</DependentUpon>
     </None>
-    <None Include="FarmaVitalDataSet.xsd">
+    <None Include="FarmaDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FarmaVitalDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>FarmaDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="FarmaVitalDataSet.xss">
-      <DependentUpon>FarmaVitalDataSet.xsd</DependentUpon>
+    <None Include="FarmaDataSet.xss">
+      <DependentUpon>FarmaDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -11,5 +11,8 @@ C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaV
 C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrnLogin.resources
 C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrmSplash.resources
 C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrmMenuadm.resources
-C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrmCliente.resources
-C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrmFornecedores.resources
+C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrmMedicamentos.resources
+C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrmFabricante.resources
+C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.FrmFuncionarios.resources
+C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.AlterFabricante.resources
+C:\Users\giovanna.vpbenedito\source\repos\FarmaVital\FarmaVital\obj\Debug\FarmaVital.PesquisarFabri.resources
