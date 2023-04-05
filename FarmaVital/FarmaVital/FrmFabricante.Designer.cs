@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
             this.textBox21 = new System.Windows.Forms.TextBox();
+            this.fabricanteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.farmaDataSet = new FarmaVital.FarmaDataSet();
             this.label23 = new System.Windows.Forms.Label();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
@@ -72,7 +74,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.fabricanteTableAdapter = new FarmaVital.FarmaDataSetTableAdapters.fabricanteTableAdapter();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fabricanteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.farmaDataSet)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -95,13 +100,14 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button4.Location = new System.Drawing.Point(698, 659);
+            this.button4.Location = new System.Drawing.Point(657, 658);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(99, 32);
             this.button4.TabIndex = 32;
             this.button4.Text = "Voltar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -110,7 +116,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button3.Location = new System.Drawing.Point(548, 659);
+            this.button3.Location = new System.Drawing.Point(525, 659);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(99, 32);
@@ -125,7 +131,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(217, 659);
+            this.button2.Location = new System.Drawing.Point(386, 659);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 32);
@@ -133,21 +139,6 @@
             this.button2.Text = "Cadastrar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(381, 659);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 32);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Pesquisar";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // groupBox4
             // 
@@ -176,10 +167,21 @@
             // 
             // textBox21
             // 
+            this.textBox21.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_repre", true));
             this.textBox21.Location = new System.Drawing.Point(228, 106);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(186, 20);
             this.textBox21.TabIndex = 16;
+            // 
+            // fabricanteBindingSource
+            // 
+            this.fabricanteBindingSource.DataMember = "fabricante";
+            this.fabricanteBindingSource.DataSource = this.farmaDataSet;
+            // 
+            // farmaDataSet
+            // 
+            this.farmaDataSet.DataSetName = "FarmaDataSet";
+            this.farmaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label23
             // 
@@ -192,6 +194,7 @@
             // 
             // textBox18
             // 
+            this.textBox18.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_email", true));
             this.textBox18.Location = new System.Drawing.Point(452, 52);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(183, 20);
@@ -199,6 +202,7 @@
             // 
             // textBox19
             // 
+            this.textBox19.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_tel2", true));
             this.textBox19.Location = new System.Drawing.Point(228, 52);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(186, 20);
@@ -224,6 +228,7 @@
             // 
             // textBox22
             // 
+            this.textBox22.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_tel1", true));
             this.textBox22.Location = new System.Drawing.Point(28, 52);
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(161, 20);
@@ -243,6 +248,7 @@
             // 
             // textBox13
             // 
+            this.textBox13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_IsMunicipal", true));
             this.textBox13.Location = new System.Drawing.Point(274, 52);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(186, 20);
@@ -268,6 +274,7 @@
             // 
             // textBox16
             // 
+            this.textBox16.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_IscEst", true));
             this.textBox16.Location = new System.Drawing.Point(28, 52);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(161, 20);
@@ -297,6 +304,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_estado", true));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Acre (AC)",
@@ -360,6 +368,7 @@
             // 
             // textBox10
             // 
+            this.textBox10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_num", true));
             this.textBox10.Location = new System.Drawing.Point(683, 52);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(67, 20);
@@ -367,6 +376,7 @@
             // 
             // textBox9
             // 
+            this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_complemento", true));
             this.textBox9.Location = new System.Drawing.Point(452, 52);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(183, 20);
@@ -374,6 +384,7 @@
             // 
             // textBox8
             // 
+            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_end", true));
             this.textBox8.Location = new System.Drawing.Point(228, 52);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(186, 20);
@@ -417,6 +428,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_bairro", true));
             this.textBox4.Location = new System.Drawing.Point(282, 125);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(186, 20);
@@ -424,6 +436,7 @@
             // 
             // textBox5
             // 
+            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_cidade", true));
             this.textBox5.Location = new System.Drawing.Point(90, 125);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(139, 20);
@@ -431,6 +444,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_cep", true));
             this.textBox6.Location = new System.Drawing.Point(28, 52);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(161, 20);
@@ -481,6 +495,7 @@
             // 
             // textBox7
             // 
+            this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_cnpj", true));
             this.textBox7.Location = new System.Drawing.Point(47, 45);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(196, 20);
@@ -515,6 +530,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_nmfan", true));
             this.textBox3.Location = new System.Drawing.Point(343, 45);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(210, 20);
@@ -522,21 +538,25 @@
             // 
             // textBox2
             // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fabricanteBindingSource, "fabri_RSocail", true));
             this.textBox2.Location = new System.Drawing.Point(190, 110);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(196, 20);
             this.textBox2.TabIndex = 1;
             // 
+            // fabricanteTableAdapter
+            // 
+            this.fabricanteTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmFabricante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1096, 519);
+            this.ClientSize = new System.Drawing.Size(1096, 701);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -549,6 +569,8 @@
             this.Load += new System.EventHandler(this.FrmFabricante_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fabricanteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.farmaDataSet)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -567,7 +589,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox textBox21;
@@ -607,5 +628,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
+        private FarmaDataSet farmaDataSet;
+        private System.Windows.Forms.BindingSource fabricanteBindingSource;
+        private FarmaDataSetTableAdapters.fabricanteTableAdapter fabricanteTableAdapter;
     }
 }

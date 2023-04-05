@@ -46,13 +46,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlterClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterClientes.Designer.cs">
+      <DependentUpon>AlterClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="AlterFabricante.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AlterFabricante.Designer.cs">
       <DependentUpon>AlterFabricante.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlterFuncio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterFuncio.Designer.cs">
+      <DependentUpon>AlterFuncio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="FrmMedADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMedADM.Designer.cs">
+      <DependentUpon>FrmMedADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PesqClieFarma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesqClieFarma.Designer.cs">
+      <DependentUpon>PesqClieFarma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PesqFabricante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesqFabricante.Designer.cs">
+      <DependentUpon>PesqFabricante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Farma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Farma.Designer.cs">
+      <DependentUpon>Farma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FarmaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,22 +142,52 @@
     <Compile Include="FrnLogin.Designer.cs">
       <DependentUpon>FrnLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="PesqFunc.cs">
+    <Compile Include="PesqCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PesqFunc.Designer.cs">
-      <DependentUpon>PesqFunc.cs</DependentUpon>
+    <Compile Include="PesqCliente.Designer.cs">
+      <DependentUpon>PesqCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="PesquisarFabri.cs">
+    <Compile Include="PesqFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PesquisarFabri.Designer.cs">
-      <DependentUpon>PesquisarFabri.cs</DependentUpon>
+    <Compile Include="PesqFuncionarios.Designer.cs">
+      <DependentUpon>PesqFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PesqMedFarma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesqMedFarma.Designer.cs">
+      <DependentUpon>PesqMedFarma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PesqMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesqMedicamentos.Designer.cs">
+      <DependentUpon>PesqMedicamentos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlterClientes.resx">
+      <DependentUpon>AlterClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AlterFabricante.resx">
       <DependentUpon>AlterFabricante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterFuncio.resx">
+      <DependentUpon>AlterFuncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMedADM.resx">
+      <DependentUpon>FrmMedADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesqClieFarma.resx">
+      <DependentUpon>PesqClieFarma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesqFabricante.resx">
+      <DependentUpon>PesqFabricante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Farma.resx">
+      <DependentUpon>Farma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCliente.resx">
       <DependentUpon>FrmCliente.cs</DependentUpon>
@@ -142,11 +213,17 @@
     <EmbeddedResource Include="FrnLogin.resx">
       <DependentUpon>FrnLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PesqFunc.resx">
-      <DependentUpon>PesqFunc.cs</DependentUpon>
+    <EmbeddedResource Include="PesqCliente.resx">
+      <DependentUpon>PesqCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PesquisarFabri.resx">
-      <DependentUpon>PesquisarFabri.cs</DependentUpon>
+    <EmbeddedResource Include="PesqFuncionarios.resx">
+      <DependentUpon>PesqFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesqMedFarma.resx">
+      <DependentUpon>PesqMedFarma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesqMedicamentos.resx">
+      <DependentUpon>PesqMedicamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -158,6 +235,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="FarmaDataSet.xsc">
+      <DependentUpon>FarmaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FarmaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmaDataSet.xss">
+      <DependentUpon>FarmaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Frm.cliente">
       <SubType>Form</SubType>
     </None>
@@ -231,6 +319,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Design sem nome %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuário-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-medicines-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plano-de-saúde-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-vender-estoque-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-caixa-registradora-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuário-401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuário-402.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-medicines-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuário-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-fornecedor-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-vendas-totais-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pesquisa-paga-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mais.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lixeira-de-reciclagem-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pesquisar-mais-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-turn-on-96.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

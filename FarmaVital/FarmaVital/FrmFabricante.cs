@@ -17,29 +17,6 @@ namespace FarmaVital
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-            this.Validate();
-            fabricanteBindingSource.EndEdit();
-            fabricanteTableAdapter.Update(farmaDataSet.fabricante);
-            this.fabricanteTableAdapter.Fill(this.farmaDataSet.fabricante);
-            fabricanteBindingSource.MoveLast();
-
-            //chamar um novo registro
-            fabricanteBindingSource.AddNew();
-
-            textBox2.Focus();
-
-            //aparece a mensagem quando der certo
-            MessageBox.Show("Cadastro de Fabricante feito com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
-            //limpar tela
-            //    textBox1.Text = "";
-            //  textbox.Text = (" ");
-
-        }
-
         private void FrmFabricante_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'farmaDataSet.fabricante'. Você pode movê-la ou removê-la conforme necessário.
@@ -56,7 +33,37 @@ namespace FarmaVital
                 }
             }
 
+            }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            this.Validate();
+            fabricanteBindingSource.EndEdit();
+           fabricanteTableAdapter.Update(farmaDataSet.fabricante);
+           this.fabricanteTableAdapter.Fill(this.farmaDataSet.fabricante);
+           fabricanteBindingSource.MoveLast();
+
+            //chamar um novo registro
+            fabricanteBindingSource.AddNew();
+
+            textBox2.Focus();
+
+            //aparece a mensagem quando der certo
+            MessageBox.Show("Cadastro de Fabricante feito com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            //limpar tela
+            //    textBox1.Text = "";
+            //  textbox.Text = (" ");
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            PesqFabricante fabri = new PesqFabricante();
+            this.Hide();
+            fabri.ShowDialog();
         }
     }
 }
+

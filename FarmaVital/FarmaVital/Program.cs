@@ -16,7 +16,7 @@ namespace FarmaVital
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmFuncionarios());
+            Application.Run(new FrmMenuadm());
         }
     }
 }

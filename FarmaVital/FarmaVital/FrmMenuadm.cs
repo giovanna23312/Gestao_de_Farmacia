@@ -19,10 +19,7 @@ namespace FarmaVital
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmFabricante fabri = new FrmFabricante();
-            this.Hide();
-            fabri.ShowDialog();
-
+          
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -43,6 +40,40 @@ namespace FarmaVital
             this.Hide();
             func.ShowDialog();
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            PesqFabricante fabri = new PesqFabricante();
+            this.Hide();
+            fabri.ShowDialog();
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            PesqFuncionarios func = new PesqFuncionarios();
+            this.Hide();
+            func.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PesqCliente clie = new PesqCliente();
+            this.Hide();
+            clie.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            PesqMedicamentos med = new PesqMedicamentos();
+            this.Hide();
+            med.ShowDialog();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+           
         }
     }
 }
