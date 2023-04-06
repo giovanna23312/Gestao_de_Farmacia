@@ -35,7 +35,7 @@ namespace FarmaVital
             funcionariosBindingSource.MoveLast();
 
             //aparece a mensagem quando der certo
-          //  MessageBox.Show(" alterada com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+           //  MessageBox.Show(" alterada com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
 
             textBox1.Focus();

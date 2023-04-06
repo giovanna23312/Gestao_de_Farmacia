@@ -65,6 +65,8 @@
       <DependentUpon>AlterFuncio.cs</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="ClassConexao.cs" />
+    <Compile Include="ClassUser.cs" />
     <Compile Include="FrmMedADM.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.medicamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.farmaDataSet = new FarmaVital.FarmaDataSet();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -60,14 +62,12 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.farmaDataSet = new FarmaVital.FarmaDataSet();
-            this.medicamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.medicamentosTableAdapter = new FarmaVital.FarmaDataSetTableAdapters.medicamentosTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.medicamentosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.farmaDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.farmaDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicamentosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -77,6 +77,16 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(175, 20);
             this.textBox1.TabIndex = 11;
+            // 
+            // medicamentosBindingSource
+            // 
+            this.medicamentosBindingSource.DataMember = "medicamentos";
+            this.medicamentosBindingSource.DataSource = this.farmaDataSet;
+            // 
+            // farmaDataSet
+            // 
+            this.farmaDataSet.DataSetName = "FarmaDataSet";
+            this.farmaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox2
             // 
@@ -106,7 +116,7 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Location = new System.Drawing.Point(160, 62);
+            this.groupBox1.Location = new System.Drawing.Point(139, 58);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(669, 184);
             this.groupBox1.TabIndex = 14;
@@ -188,7 +198,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(350, 5);
+            this.label1.Location = new System.Drawing.Point(329, 1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(275, 25);
             this.label1.TabIndex = 16;
@@ -198,7 +208,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkGreen;
             this.panel6.Controls.Add(this.panel1);
-            this.panel6.Location = new System.Drawing.Point(315, 32);
+            this.panel6.Location = new System.Drawing.Point(294, 28);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(342, 1);
@@ -227,7 +237,7 @@
             this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Location = new System.Drawing.Point(177, 265);
+            this.groupBox2.Location = new System.Drawing.Point(156, 261);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(622, 195);
             this.groupBox2.TabIndex = 17;
@@ -340,7 +350,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Location = new System.Drawing.Point(355, 494);
+            this.panel2.Location = new System.Drawing.Point(334, 490);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(342, 1);
@@ -353,7 +363,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button4.Location = new System.Drawing.Point(659, 518);
+            this.button4.Location = new System.Drawing.Point(638, 514);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(99, 32);
@@ -369,7 +379,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button3.Location = new System.Drawing.Point(480, 518);
+            this.button3.Location = new System.Drawing.Point(459, 514);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(99, 32);
@@ -385,7 +395,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(300, 518);
+            this.button2.Location = new System.Drawing.Point(279, 514);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 32);
@@ -393,16 +403,6 @@
             this.button2.Text = "Cadastrar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // farmaDataSet
-            // 
-            this.farmaDataSet.DataSetName = "FarmaDataSet";
-            this.farmaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // medicamentosBindingSource
-            // 
-            this.medicamentosBindingSource.DataMember = "medicamentos";
-            this.medicamentosBindingSource.DataSource = this.farmaDataSet;
             // 
             // medicamentosTableAdapter
             // 
@@ -412,7 +412,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 566);
+            this.ClientSize = new System.Drawing.Size(867, 655);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -425,13 +425,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMedicamentos fARMA";
             this.Load += new System.EventHandler(this.FrmMedicamentos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.medicamentosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.farmaDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.farmaDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicamentosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

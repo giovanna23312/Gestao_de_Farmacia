@@ -17,6 +17,8 @@ namespace FarmaVital
             InitializeComponent();
         }
 
+
+
         private void FrmCliente_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'farmaDataSet.cliente'. Você pode movê-la ou removê-la conforme necessário.
@@ -64,9 +66,6 @@ namespace FarmaVital
 
         private void button4_Click(object sender, EventArgs e)
         {
-            PesqClieFarma clie = new PesqClieFarma();
-            this.Hide();
-            clie.ShowDialog();
 
         }
     }
