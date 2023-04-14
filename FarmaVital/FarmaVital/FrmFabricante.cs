@@ -21,6 +21,8 @@ namespace FarmaVital
         {
             // TODO: esta linha de código carrega dados na tabela 'farmaDataSet.fabricante'. Você pode movê-la ou removê-la conforme necessário.
             this.fabricanteTableAdapter.Fill(this.farmaDataSet.fabricante);
+            // TODO: esta linha de código carrega dados na tabela 'farmaDataSet.fabricante'. Você pode movê-la ou removê-la conforme necessário.
+            this.fabricanteTableAdapter.Fill(this.farmaDataSet.fabricante);
             fabricanteBindingSource.AddNew();
 
 
@@ -63,6 +65,18 @@ namespace FarmaVital
             PesqFabricante fabri = new PesqFabricante();
             this.Hide();
             fabri.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PesqFabricante pesq = new PesqFabricante();
+            this.Hide();
+            pesq.ShowDialog();
         }
     }
 }

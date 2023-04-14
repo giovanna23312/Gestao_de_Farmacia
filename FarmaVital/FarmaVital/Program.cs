@@ -16,7 +16,7 @@ namespace FarmaVital
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Farma());
+            Application.Run(new Caixa());
         }
     }
 }

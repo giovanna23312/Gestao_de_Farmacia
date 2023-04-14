@@ -13,8 +13,7 @@ namespace FarmaVital
 {
     public partial class Farma : Form
     {
-        private Button btnAtual;
-        private Form formAtual;
+   
 
         public Farma()
         {
@@ -28,12 +27,17 @@ namespace FarmaVital
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirForm(new PesqClieFarma(), sender);
+            PesqClieFarma clie = new PesqClieFarma();
+            this.Hide();
+            clie.ShowDialog();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbrirForm(new PesqMedFarma(), sender);
+            PesqMedFarma md = new PesqMedFarma();
+            this.Hide();
+            md.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -41,64 +45,33 @@ namespace FarmaVital
             
         }
 
-        private void AbrirForm(Form formSel, Object btnSender)
-        {
-            if (formAtual != null)
-            {
-                formAtual.Close();
-            }
-            AtivarBtn(btnSender);
-            formAtual = formSel;
-            formSel.TopLevel = false; //nivel de controle
-            formSel.FormBorderStyle = FormBorderStyle.None;//caixa de controle desativada
-            formSel.Dock = DockStyle.Fill; // Posicionamento
-            this.panelContainer.Controls.Add(formSel); //adicionar o form ao painel
-            this.panelContainer.Tag = formSel;
-            formSel.BringToFront();//Traz o controle para frente na ordem Z
-            formSel.Show();// Chama o Form
-            label1.Text = formSel.Text;
-
-        }
-
-        private void Resetar()
-        {
-            DesativarBtn();
-            label1.Text = "HOME";
-            btnHome.Visible = false;
-        }
-
-
-        private void AtivarBtn(Object btnSender)
-        {
-            if (btnSender != null)
-            {
-                if (btnAtual != (Button)btnSender)
-                {
-                    btnHome.Visible = true;
-                    DesativarBtn();
-                    btnAtual = (Button)btnSender;
-                    btnAtual.BackColor = Color.FromArgb(31, 80, 31);
-                    btnAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                }
-            }
-        }
-
-        private void DesativarBtn()
-        {
-            foreach (Control antBtn in panelMenu.Controls)
-            {
-                if (antBtn.GetType() == typeof(Button))
-                {
-                    antBtn.BackColor = Color.FromArgb(51, 51, 76);
-                    antBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                }
-            }
-        }
-
-
         private void Farma_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void panelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Caixa f = new Caixa();
+            this.Hide();
+            f.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FrnLogin lg = new FrnLogin();
+            this.Hide();
+            lg.ShowDialog();
         }
     }
 }

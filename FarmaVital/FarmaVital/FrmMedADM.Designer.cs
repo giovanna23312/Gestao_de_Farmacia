@@ -63,6 +63,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.medicamentosTableAdapter = new FarmaVital.FarmaDataSetTableAdapters.medicamentosTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.medicamentosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.farmaDataSet)).BeginInit();
@@ -73,7 +74,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Location = new System.Drawing.Point(246, 523);
+            this.panel2.Location = new System.Drawing.Point(348, 502);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(342, 1);
@@ -86,7 +87,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button4.Location = new System.Drawing.Point(550, 547);
+            this.button4.Location = new System.Drawing.Point(626, 526);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(99, 32);
@@ -102,7 +103,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button3.Location = new System.Drawing.Point(371, 547);
+            this.button3.Location = new System.Drawing.Point(473, 526);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(99, 32);
@@ -117,7 +118,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(191, 547);
+            this.button2.Location = new System.Drawing.Point(328, 526);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 32);
@@ -129,7 +130,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(378, 139);
+            this.label12.Location = new System.Drawing.Point(434, 138);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(60, 13);
             this.label12.TabIndex = 28;
@@ -149,16 +150,16 @@
             this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Location = new System.Drawing.Point(68, 294);
+            this.groupBox2.Location = new System.Drawing.Point(141, 280);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(622, 195);
+            this.groupBox2.Size = new System.Drawing.Size(769, 195);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
             // 
             // textBox10
             // 
             this.textBox10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicamentosBindingSource, "med_Lucro", true));
-            this.textBox10.Location = new System.Drawing.Point(381, 164);
+            this.textBox10.Location = new System.Drawing.Point(437, 163);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(200, 20);
             this.textBox10.TabIndex = 27;
@@ -176,7 +177,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(49, 139);
+            this.label11.Location = new System.Drawing.Point(105, 138);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(78, 13);
             this.label11.TabIndex = 26;
@@ -185,7 +186,7 @@
             // textBox9
             // 
             this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicamentosBindingSource, "Med_PreçVen", true));
-            this.textBox9.Location = new System.Drawing.Point(52, 164);
+            this.textBox9.Location = new System.Drawing.Point(108, 163);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(200, 20);
             this.textBox9.TabIndex = 25;
@@ -193,7 +194,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(49, 16);
+            this.label7.Location = new System.Drawing.Point(105, 15);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 13);
             this.label7.TabIndex = 21;
@@ -202,7 +203,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(378, 16);
+            this.label8.Location = new System.Drawing.Point(434, 15);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(74, 13);
             this.label8.TabIndex = 22;
@@ -211,7 +212,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(49, 82);
+            this.label9.Location = new System.Drawing.Point(105, 81);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(62, 13);
             this.label9.TabIndex = 23;
@@ -220,7 +221,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(378, 82);
+            this.label10.Location = new System.Drawing.Point(434, 81);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(80, 13);
             this.label10.TabIndex = 24;
@@ -229,7 +230,7 @@
             // textBox8
             // 
             this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicamentosBindingSource, "Med_PreçUnid", true));
-            this.textBox8.Location = new System.Drawing.Point(381, 107);
+            this.textBox8.Location = new System.Drawing.Point(437, 106);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(200, 20);
             this.textBox8.TabIndex = 21;
@@ -237,7 +238,7 @@
             // textBox7
             // 
             this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicamentosBindingSource, "Med_qtde", true));
-            this.textBox7.Location = new System.Drawing.Point(52, 107);
+            this.textBox7.Location = new System.Drawing.Point(108, 106);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(200, 20);
             this.textBox7.TabIndex = 18;
@@ -245,17 +246,17 @@
             // textBox5
             // 
             this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicamentosBindingSource, "Med_DtVali", true));
-            this.textBox5.Location = new System.Drawing.Point(383, 43);
+            this.textBox5.Location = new System.Drawing.Point(439, 42);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(185, 20);
+            this.textBox5.Size = new System.Drawing.Size(198, 20);
             this.textBox5.TabIndex = 16;
             // 
             // textBox6
             // 
             this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicamentosBindingSource, "Med_DtFabri", true));
-            this.textBox6.Location = new System.Drawing.Point(52, 43);
+            this.textBox6.Location = new System.Drawing.Point(108, 42);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(185, 20);
+            this.textBox6.Size = new System.Drawing.Size(200, 20);
             this.textBox6.TabIndex = 17;
             // 
             // panel1
@@ -271,7 +272,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkGreen;
             this.panel6.Controls.Add(this.panel1);
-            this.panel6.Location = new System.Drawing.Point(206, 61);
+            this.panel6.Location = new System.Drawing.Point(348, 33);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(342, 1);
@@ -313,7 +314,7 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Location = new System.Drawing.Point(51, 91);
+            this.groupBox1.Location = new System.Drawing.Point(195, 68);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(669, 184);
             this.groupBox1.TabIndex = 27;
@@ -395,7 +396,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(241, 34);
+            this.label1.Location = new System.Drawing.Point(383, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(275, 25);
             this.label1.TabIndex = 29;
@@ -405,11 +406,30 @@
             // 
             this.medicamentosTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::FarmaVital.Properties.Resources.My_project_1__9_;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.button1.Location = new System.Drawing.Point(11, 560);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(53, 38);
+            this.button1.TabIndex = 54;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmMedADM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(748, 718);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.ClientSize = new System.Drawing.Size(1012, 600);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -418,7 +438,9 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMedADM";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMedADM";
             this.Load += new System.EventHandler(this.FrmMedADM_Load);
             this.groupBox2.ResumeLayout(false);
@@ -468,5 +490,6 @@
         private FarmaDataSet farmaDataSet;
         private System.Windows.Forms.BindingSource medicamentosBindingSource;
         private FarmaDataSetTableAdapters.medicamentosTableAdapter medicamentosTableAdapter;
+        private System.Windows.Forms.Button button1;
     }
 }

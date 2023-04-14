@@ -46,5 +46,12 @@ namespace FarmaVital
             this.Hide();
             pesq.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PesqFuncionarios pesq = new PesqFuncionarios();
+            this.Hide();
+            pesq.ShowDialog();
+        }
     }
 }

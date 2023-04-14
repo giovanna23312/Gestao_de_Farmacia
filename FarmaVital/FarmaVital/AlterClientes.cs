@@ -47,5 +47,17 @@ namespace FarmaVital
             this.Hide();
             pesq.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            PesqClieFarma pesq = new PesqClieFarma();
+            this.Hide();
+            pesq.ShowDialog();
+        }
     }
 }

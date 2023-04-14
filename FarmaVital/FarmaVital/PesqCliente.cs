@@ -52,14 +52,7 @@ namespace FarmaVital
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length == 0)
-            {
-                clienteBindingSource.Filter = "";
-            }
-            else
-            {
-                clienteBindingSource.Filter = string.Format("clie_cpf like'%{0}%'", textBox1.Text);
-            }
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -82,7 +75,31 @@ namespace FarmaVital
 
         private void button7_Click(object sender, EventArgs e)
         {
+            Class1.codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            this.Visible = false;
+            AlterClieADM pesq = new AlterClieADM();
+            pesq.ShowDialog();
+        }
 
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            FrmMenuadm menu = new FrmMenuadm();
+            this.Hide();
+            menu.ShowDialog();
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length != 0)
+            {
+                clienteBindingSource.Filter = string.Format("clie_cpf like'%{0}%'", textBox1.Text);
+            }
+            else
+            {
+                clienteBindingSource.Filter = "";
+
+            }
         }
     }
 }

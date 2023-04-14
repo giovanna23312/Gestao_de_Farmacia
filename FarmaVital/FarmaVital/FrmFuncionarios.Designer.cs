@@ -76,6 +76,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.funcionariosTableAdapter = new FarmaVital.FarmaDataSetTableAdapters.funcionariosTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.funcionariosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.farmaDataSet)).BeginInit();
@@ -96,9 +97,9 @@
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(111, 35);
+            this.groupBox1.Location = new System.Drawing.Point(215, 49);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(565, 176);
+            this.groupBox1.Size = new System.Drawing.Size(568, 162);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -211,9 +212,9 @@
             this.groupBox2.Controls.Add(this.textBox10);
             this.groupBox2.Controls.Add(this.textBox11);
             this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Location = new System.Drawing.Point(29, 217);
+            this.groupBox2.Location = new System.Drawing.Point(122, 231);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(698, 170);
+            this.groupBox2.Size = new System.Drawing.Size(719, 163);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             // 
@@ -249,7 +250,7 @@
             "São Paulo (SP)",
             "Sergipe (SE)",
             "Tocantins (TO)"});
-            this.comboBox2.Location = new System.Drawing.Point(450, 125);
+            this.comboBox2.Location = new System.Drawing.Point(503, 124);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 19;
@@ -257,7 +258,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(447, 88);
+            this.label12.Location = new System.Drawing.Point(500, 87);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(40, 13);
             this.label12.TabIndex = 15;
@@ -266,7 +267,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(254, 97);
+            this.label11.Location = new System.Drawing.Point(307, 96);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(28, 13);
             this.label11.TabIndex = 14;
@@ -275,7 +276,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(50, 97);
+            this.label10.Location = new System.Drawing.Point(103, 96);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(40, 13);
             this.label10.TabIndex = 13;
@@ -284,7 +285,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(449, 33);
+            this.label9.Location = new System.Drawing.Point(502, 32);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(71, 13);
             this.label9.TabIndex = 12;
@@ -293,7 +294,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(254, 33);
+            this.label8.Location = new System.Drawing.Point(307, 32);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(34, 13);
             this.label8.TabIndex = 11;
@@ -302,7 +303,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(37, 33);
+            this.label7.Location = new System.Drawing.Point(90, 32);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 13);
             this.label7.TabIndex = 10;
@@ -311,7 +312,7 @@
             // textBox8
             // 
             this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "Fun_numcasa", true));
-            this.textBox8.Location = new System.Drawing.Point(450, 49);
+            this.textBox8.Location = new System.Drawing.Point(503, 48);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(131, 20);
             this.textBox8.TabIndex = 4;
@@ -319,7 +320,7 @@
             // textBox9
             // 
             this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "Fun_cep", true));
-            this.textBox9.Location = new System.Drawing.Point(257, 126);
+            this.textBox9.Location = new System.Drawing.Point(310, 125);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(131, 20);
             this.textBox9.TabIndex = 3;
@@ -327,7 +328,7 @@
             // textBox10
             // 
             this.textBox10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "Fun_bairro", true));
-            this.textBox10.Location = new System.Drawing.Point(257, 49);
+            this.textBox10.Location = new System.Drawing.Point(310, 48);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(131, 20);
             this.textBox10.TabIndex = 2;
@@ -335,7 +336,7 @@
             // textBox11
             // 
             this.textBox11.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "Fun_cidade", true));
-            this.textBox11.Location = new System.Drawing.Point(40, 126);
+            this.textBox11.Location = new System.Drawing.Point(93, 125);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(131, 20);
             this.textBox11.TabIndex = 1;
@@ -343,7 +344,7 @@
             // textBox12
             // 
             this.textBox12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "Fun_end", true));
-            this.textBox12.Location = new System.Drawing.Point(40, 49);
+            this.textBox12.Location = new System.Drawing.Point(93, 48);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(131, 20);
             this.textBox12.TabIndex = 0;
@@ -352,7 +353,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(253, 2);
+            this.label1.Location = new System.Drawing.Point(379, -1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(259, 25);
             this.label1.TabIndex = 18;
@@ -362,7 +363,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkGreen;
             this.panel6.Controls.Add(this.panel1);
-            this.panel6.Location = new System.Drawing.Point(218, 29);
+            this.panel6.Location = new System.Drawing.Point(344, 26);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(342, 1);
@@ -391,16 +392,16 @@
             this.groupBox3.Controls.Add(this.textBox13);
             this.groupBox3.Controls.Add(this.textBox6);
             this.groupBox3.Controls.Add(this.textBox14);
-            this.groupBox3.Location = new System.Drawing.Point(138, 410);
+            this.groupBox3.Location = new System.Drawing.Point(215, 424);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(512, 146);
+            this.groupBox3.Size = new System.Drawing.Size(591, 129);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(339, 78);
+            this.label19.Location = new System.Drawing.Point(386, 76);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(38, 13);
             this.label19.TabIndex = 31;
@@ -409,7 +410,7 @@
             // textBox17
             // 
             this.textBox17.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "Fun_senha", true));
-            this.textBox17.Location = new System.Drawing.Point(341, 94);
+            this.textBox17.Location = new System.Drawing.Point(388, 92);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(131, 20);
             this.textBox17.TabIndex = 30;
@@ -417,7 +418,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(175, 78);
+            this.label18.Location = new System.Drawing.Point(222, 76);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(43, 13);
             this.label18.TabIndex = 29;
@@ -426,7 +427,7 @@
             // textBox16
             // 
             this.textBox16.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "Fun_user", true));
-            this.textBox16.Location = new System.Drawing.Point(178, 94);
+            this.textBox16.Location = new System.Drawing.Point(225, 92);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(131, 20);
             this.textBox16.TabIndex = 28;
@@ -434,7 +435,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(13, 78);
+            this.label17.Location = new System.Drawing.Point(60, 76);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(35, 13);
             this.label17.TabIndex = 27;
@@ -443,7 +444,7 @@
             // textBox15
             // 
             this.textBox15.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "Fun_cargo", true));
-            this.textBox15.Location = new System.Drawing.Point(16, 94);
+            this.textBox15.Location = new System.Drawing.Point(63, 92);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(131, 20);
             this.textBox15.TabIndex = 26;
@@ -451,7 +452,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(13, 26);
+            this.label14.Location = new System.Drawing.Point(60, 24);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(49, 13);
             this.label14.TabIndex = 21;
@@ -460,7 +461,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(187, 26);
+            this.label15.Location = new System.Drawing.Point(234, 24);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(39, 13);
             this.label15.TabIndex = 23;
@@ -469,7 +470,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(339, 26);
+            this.label16.Location = new System.Drawing.Point(386, 24);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(72, 13);
             this.label16.TabIndex = 25;
@@ -478,7 +479,7 @@
             // textBox13
             // 
             this.textBox13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "Fun_celular", true));
-            this.textBox13.Location = new System.Drawing.Point(178, 42);
+            this.textBox13.Location = new System.Drawing.Point(225, 40);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(131, 20);
             this.textBox13.TabIndex = 22;
@@ -486,7 +487,7 @@
             // textBox6
             // 
             this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "Fun_telefone", true));
-            this.textBox6.Location = new System.Drawing.Point(16, 42);
+            this.textBox6.Location = new System.Drawing.Point(63, 40);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(131, 20);
             this.textBox6.TabIndex = 20;
@@ -494,7 +495,7 @@
             // textBox14
             // 
             this.textBox14.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionariosBindingSource, "Fun_email", true));
-            this.textBox14.Location = new System.Drawing.Point(341, 42);
+            this.textBox14.Location = new System.Drawing.Point(388, 40);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(131, 20);
             this.textBox14.TabIndex = 24;
@@ -503,7 +504,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Location = new System.Drawing.Point(218, 575);
+            this.panel2.Location = new System.Drawing.Point(339, 569);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(342, 1);
@@ -516,7 +517,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button4.Location = new System.Drawing.Point(481, 602);
+            this.button4.Location = new System.Drawing.Point(599, 596);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(99, 32);
@@ -532,13 +533,14 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button3.Location = new System.Drawing.Point(334, 599);
+            this.button3.Location = new System.Drawing.Point(452, 593);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(99, 32);
             this.button3.TabIndex = 30;
             this.button3.Text = "Apagar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -547,7 +549,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(170, 599);
+            this.button2.Location = new System.Drawing.Point(328, 593);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 32);
@@ -560,12 +562,30 @@
             // 
             this.funcionariosTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::FarmaVital.Properties.Resources.My_project_1__9_;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.button1.Location = new System.Drawing.Point(0, 620);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(53, 38);
+            this.button1.TabIndex = 55;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // FrmFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(867, 655);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.ClientSize = new System.Drawing.Size(1012, 659);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -575,7 +595,9 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmFuncionarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmFuncionarios";
             this.Load += new System.EventHandler(this.FrmFuncionarios_Load);
             this.groupBox1.ResumeLayout(false);
@@ -641,5 +663,6 @@
         private FarmaDataSet farmaDataSet;
         private System.Windows.Forms.BindingSource funcionariosBindingSource;
         private FarmaDataSetTableAdapters.funcionariosTableAdapter funcionariosTableAdapter;
+        private System.Windows.Forms.Button button1;
     }
 }

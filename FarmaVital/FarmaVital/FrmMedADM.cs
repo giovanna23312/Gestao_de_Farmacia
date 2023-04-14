@@ -59,6 +59,11 @@ namespace FarmaVital
             medicamentosBindingSource.AddNew();
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PesqMedicamentos med = new PesqMedicamentos();
+            this.Hide();
+            med.ShowDialog();
+        }
     }
 }

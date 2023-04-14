@@ -71,14 +71,7 @@ namespace FarmaVital
         private void button2_Click_1(object sender, EventArgs e)
         {
 
-            if (textBox2.Text.Length == 0)
-            {
-                fabricanteBindingSource.Filter = "";
-            }
-            else
-            {
-                fabricanteBindingSource.Filter = string.Format("fabri_nmfan like'%{0}%'", textBox2.Text);
-            }
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -94,6 +87,45 @@ namespace FarmaVital
             this.Visible = false;
             AlterFabricante pesq = new AlterFabricante();
             pesq.ShowDialog();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                //string codigo;
+                //codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                fabricanteBindingSource.RemoveCurrent();
+                fabricanteTableAdapter.Update(farmaDataSet.fabricante); //salvar
+                this.fabricanteTableAdapter.Fill(this.farmaDataSet.fabricante);
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Não foi possível excluir registro.\n" + erro.Message.ToString());
+                //throw;
+            }
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            FrmMenuadm menu = new FrmMenuadm();
+            this.Hide();
+            menu.ShowDialog();
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox2.Text.Length != 0)
+            {
+                fabricanteBindingSource.Filter = string.Format("fabri_cnpj like'%{0}%'", textBox2.Text);
+            }
+            else
+            {
+                fabricanteBindingSource.Filter = "";
+
+            }
         }
     }
 } 

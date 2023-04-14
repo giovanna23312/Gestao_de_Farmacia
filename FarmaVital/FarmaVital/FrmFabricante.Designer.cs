@@ -30,14 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
             this.textBox21 = new System.Windows.Forms.TextBox();
-            this.fabricanteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.farmaDataSet = new FarmaVital.FarmaDataSet();
             this.label23 = new System.Windows.Forms.Label();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
@@ -74,40 +71,27 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.farmaDataSet = new FarmaVital.FarmaDataSet();
+            this.fabricanteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fabricanteTableAdapter = new FarmaVital.FarmaDataSetTableAdapters.fabricanteTableAdapter();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fabricanteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.farmaDataSet)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.farmaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fabricanteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Location = new System.Drawing.Point(234, 607);
+            this.panel2.Location = new System.Drawing.Point(331, 621);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(342, 1);
             this.panel2.TabIndex = 25;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button4.Location = new System.Drawing.Point(510, 630);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(99, 32);
-            this.button4.TabIndex = 32;
-            this.button4.Text = "Voltar";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -116,13 +100,14 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button3.Location = new System.Drawing.Point(378, 631);
+            this.button3.Location = new System.Drawing.Point(533, 648);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(99, 32);
             this.button3.TabIndex = 31;
             this.button3.Text = "Apagar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -131,7 +116,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(239, 631);
+            this.button2.Location = new System.Drawing.Point(394, 648);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 32);
@@ -150,7 +135,7 @@
             this.groupBox4.Controls.Add(this.label26);
             this.groupBox4.Controls.Add(this.label27);
             this.groupBox4.Controls.Add(this.textBox22);
-            this.groupBox4.Location = new System.Drawing.Point(25, 451);
+            this.groupBox4.Location = new System.Drawing.Point(153, 448);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(698, 151);
             this.groupBox4.TabIndex = 27;
@@ -172,16 +157,6 @@
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(186, 20);
             this.textBox21.TabIndex = 16;
-            // 
-            // fabricanteBindingSource
-            // 
-            this.fabricanteBindingSource.DataMember = "fabricante";
-            this.fabricanteBindingSource.DataSource = this.farmaDataSet;
-            // 
-            // farmaDataSet
-            // 
-            this.farmaDataSet.DataSetName = "FarmaDataSet";
-            this.farmaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label23
             // 
@@ -240,7 +215,7 @@
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.label20);
             this.groupBox3.Controls.Add(this.textBox16);
-            this.groupBox3.Location = new System.Drawing.Point(181, 348);
+            this.groupBox3.Location = new System.Drawing.Point(259, 345);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(501, 97);
             this.groupBox3.TabIndex = 28;
@@ -296,7 +271,7 @@
             this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Location = new System.Drawing.Point(25, 183);
+            this.groupBox2.Location = new System.Drawing.Point(153, 180);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(698, 159);
             this.groupBox2.TabIndex = 23;
@@ -454,7 +429,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(292, 0);
+            this.label1.Location = new System.Drawing.Point(420, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(237, 25);
             this.label1.TabIndex = 26;
@@ -464,7 +439,7 @@
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ControlText;
             this.panel6.Controls.Add(this.panel1);
-            this.panel6.Location = new System.Drawing.Point(234, 27);
+            this.panel6.Location = new System.Drawing.Point(362, 29);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(342, 1);
@@ -487,7 +462,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Location = new System.Drawing.Point(139, 33);
+            this.groupBox1.Location = new System.Drawing.Point(239, 35);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(571, 144);
             this.groupBox1.TabIndex = 22;
@@ -544,6 +519,33 @@
             this.textBox2.Size = new System.Drawing.Size(196, 20);
             this.textBox2.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::FarmaVital.Properties.Resources.My_project_1__9_;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.button1.Location = new System.Drawing.Point(-1, 675);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(53, 38);
+            this.button1.TabIndex = 55;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // farmaDataSet
+            // 
+            this.farmaDataSet.DataSetName = "FarmaDataSet";
+            this.farmaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fabricanteBindingSource
+            // 
+            this.fabricanteBindingSource.DataMember = "fabricante";
+            this.fabricanteBindingSource.DataSource = this.farmaDataSet;
+            // 
             // fabricanteTableAdapter
             // 
             this.fabricanteTableAdapter.ClearBeforeFill = true;
@@ -552,10 +554,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 661);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.ClientSize = new System.Drawing.Size(995, 713);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox4);
@@ -571,8 +574,6 @@
             this.Load += new System.EventHandler(this.FrmFabricante_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fabricanteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.farmaDataSet)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -580,6 +581,8 @@
             this.panel6.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.farmaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fabricanteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -588,7 +591,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -630,6 +632,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button1;
         private FarmaDataSet farmaDataSet;
         private System.Windows.Forms.BindingSource fabricanteBindingSource;
         private FarmaDataSetTableAdapters.fabricanteTableAdapter fabricanteTableAdapter;

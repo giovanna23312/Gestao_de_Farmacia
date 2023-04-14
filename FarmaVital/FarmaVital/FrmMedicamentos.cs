@@ -95,5 +95,17 @@ namespace FarmaVital
         {
 
         }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            PesqMedFarma pesq = new PesqMedFarma();
+            this.Hide();
+            pesq.ShowDialog();
+        }
     }
 }

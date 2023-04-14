@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FarmaVital
 {
@@ -40,23 +41,56 @@ namespace FarmaVital
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length == 0)
-            {
-                medicamentosBindingSource.Filter = "";
-            }
-            else
-            {
-                medicamentosBindingSource.Filter = string.Format("Med_NMed like'%{0}%'", textBox1.Text);
-            }
+           
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        
+
+private void button7_Click(object sender, EventArgs e)
         {
             Class1.codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             this.Visible = false;
-            AlterClientes clie = new AlterClientes();
+            AlterMedFarma clie = new AlterMedFarma();
             this.Hide();
             clie.ShowDialog();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length != 0)
+            {
+                medicamentosBindingSource.Filter = string.Format("Med_NMed like'%{0}%'", textBox1.Text);
+            }
+            else
+            {
+                medicamentosBindingSource.Filter = "";
+
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Farma menu = new Farma();
+            this.Hide();
+            menu.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //string codigo;
+                //codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                medicamentosBindingSource.RemoveCurrent();
+                medicamentosTableAdapter.Update(farmaDataSet.medicamentos); //salvar
+                this.medicamentosTableAdapter.Fill(this.farmaDataSet.medicamentos);
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Não foi possível excluir registro.\n" + erro.Message.ToString());
+                //throw;
+            }
         }
     }
 }

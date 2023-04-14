@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlterClieADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterClieADM.Designer.cs">
+      <DependentUpon>AlterClieADM.cs</DependentUpon>
+    </Compile>
     <Compile Include="AlterClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,9 +70,25 @@
     <Compile Include="AlterFuncio.Designer.cs">
       <DependentUpon>AlterFuncio.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlterMedADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterMedADM.Designer.cs">
+      <DependentUpon>AlterMedADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterMedFarma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterMedFarma.Designer.cs">
+      <DependentUpon>AlterMedFarma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caixa.Designer.cs">
+      <DependentUpon>Caixa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
-    <Compile Include="ClassConexao.cs" />
-    <Compile Include="ClassUser.cs" />
     <Compile Include="FrmMedADM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +192,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlterClieADM.resx">
+      <DependentUpon>AlterClieADM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AlterClientes.resx">
       <DependentUpon>AlterClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +203,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AlterFuncio.resx">
       <DependentUpon>AlterFuncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterMedADM.resx">
+      <DependentUpon>AlterMedADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterMedFarma.resx">
+      <DependentUpon>AlterMedFarma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caixa.resx">
+      <DependentUpon>Caixa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMedADM.resx">
       <DependentUpon>FrmMedADM.cs</DependentUpon>
@@ -369,6 +403,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-turn-on-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My project-1 %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sua sause é nossa prioridade %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My project-1 %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My project-1 %2810%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My project-1 %2810%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My project-1 %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My project-1 %289%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

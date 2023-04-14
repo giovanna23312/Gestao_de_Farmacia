@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FarmaVital
 {
@@ -27,14 +28,6 @@ namespace FarmaVital
             funcionariosBindingSource.AddNew();
 
 
-            foreach (Control controle in this.Controls)
-            {
-                if (controle is TextBox)
-                {
-                    TextBox textBox = (TextBox)controle;
-                    textBox.Text = string.Empty;
-                }
-            }
 
 
 
@@ -70,6 +63,19 @@ namespace FarmaVital
             PesqFuncionarios func = new PesqFuncionarios();
             this.Hide();
             func.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            PesqFuncionarios pesq = new PesqFuncionarios();
+            this.Hide();
+            pesq.ShowDialog();
         }
     }
 }

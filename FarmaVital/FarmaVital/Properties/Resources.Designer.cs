@@ -303,6 +303,36 @@ namespace FarmaVital.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap My_project_1__10_ {
+            get {
+                object obj = ResourceManager.GetObject("My project-1 (10)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap My_project_1__10_1 {
+            get {
+                object obj = ResourceManager.GetObject("My project-1 (10)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap My_project_1__10_2 {
+            get {
+                object obj = ResourceManager.GetObject("My project-1 (10)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap My_project_1__2_ {
             get {
                 object obj = ResourceManager.GetObject("My project-1 (2)", resourceCulture);
@@ -336,6 +366,36 @@ namespace FarmaVital.Properties {
         internal static System.Drawing.Bitmap My_project_1__4_ {
             get {
                 object obj = ResourceManager.GetObject("My project-1 (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap My_project_1__7_ {
+            get {
+                object obj = ResourceManager.GetObject("My project-1 (7)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap My_project_1__9_ {
+            get {
+                object obj = ResourceManager.GetObject("My project-1 (9)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap My_project_1__9_1 {
+            get {
+                object obj = ResourceManager.GetObject("My project-1 (9)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -426,6 +486,16 @@ namespace FarmaVital.Properties {
         internal static System.Drawing.Bitmap Sua_sause_é_nossa_prioridade__4_ {
             get {
                 object obj = ResourceManager.GetObject("Sua sause é nossa prioridade (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sua_sause_é_nossa_prioridade__4_1 {
+            get {
+                object obj = ResourceManager.GetObject("Sua sause é nossa prioridade (4)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

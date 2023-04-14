@@ -71,5 +71,43 @@ namespace FarmaVital
             pesq.ShowDialog();
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //string codigo;
+                //codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                funcionariosBindingSource.RemoveCurrent();
+                funcionariosTableAdapter.Update(farmaDataSet.funcionarios); //salvar
+                this.funcionariosTableAdapter.Fill(this.farmaDataSet.funcionarios);
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Não foi possível excluir registro.\n" + erro.Message.ToString());
+                //throw;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length != 0)
+            {
+                funcionariosBindingSource.Filter = string.Format("Fun_cpf like'%{0}%'", textBox1.Text);
+            }
+            else
+            {
+                funcionariosBindingSource.Filter = "";
+
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            FrmMenuadm menu = new FrmMenuadm();
+            this.Hide();
+            menu.ShowDialog();
+        }
     }
 }

@@ -66,6 +66,21 @@ namespace FarmaVital
 
         private void button4_Click(object sender, EventArgs e)
         {
+            PesqClieFarma pesq = new PesqClieFarma();
+            this.Hide();
+            pesq.ShowDialog();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            PesqClieFarma pesq = new PesqClieFarma();
+            this.Hide();
+            pesq.ShowDialog();
 
         }
     }
