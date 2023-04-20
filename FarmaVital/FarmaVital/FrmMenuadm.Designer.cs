@@ -96,9 +96,9 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::FarmaVital.Properties.Resources.icons8_pesquisa_paga_48__1_;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 449);
+            this.button4.Location = new System.Drawing.Point(3, 439);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(261, 51);
+            this.button4.Size = new System.Drawing.Size(261, 60);
             this.button4.TabIndex = 5;
             this.button4.Text = "Historicos de Vendas";
             this.button4.UseVisualStyleBackColor = true;

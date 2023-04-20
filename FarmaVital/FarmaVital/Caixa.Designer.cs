@@ -62,6 +62,7 @@
             // dataGridView2
             // 
             this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -169,6 +170,7 @@
             // 
             // Produtos
             // 
+            this.Produtos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Produtos.FormattingEnabled = true;
             this.Produtos.Location = new System.Drawing.Point(588, 12);
             this.Produtos.Name = "Produtos";
@@ -177,6 +179,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(588, 327);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -194,7 +197,7 @@
             "PIX"});
             this.comboBox2.Location = new System.Drawing.Point(588, 463);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(211, 21);
+            this.comboBox2.Size = new System.Drawing.Size(303, 21);
             this.comboBox2.TabIndex = 4;
             // 
             // button5
@@ -210,9 +213,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 22);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(20, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 13);
+            this.label4.Size = new System.Drawing.Size(137, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Código de Produto";
             // 
@@ -235,7 +239,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(139, 24);
+            this.textBox3.Location = new System.Drawing.Point(23, 46);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(410, 20);
             this.textBox3.TabIndex = 9;
@@ -247,11 +251,11 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(139, 476);
+            this.button6.Location = new System.Drawing.Point(114, 476);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(80, 23);
             this.button6.TabIndex = 10;
-            this.button6.Text = "button6";
+            this.button6.Text = "DELETAR";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
